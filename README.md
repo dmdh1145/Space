@@ -1,6 +1,6 @@
-# Dark Engineer Template
+# DmDh's Space Template
 
-Dark grid aesthetic with noise overlay, animated counters, and career timeline. Inspired by modern engineer portfolios.
+Dark grid aesthetic with noise overlay, animated counters, and career timeline. Inspired by modern personal spaces.
 
 ## Preview
 
@@ -21,7 +21,7 @@ Dark grid aesthetic with noise overlay, animated counters, and career timeline. 
 - Contact
 
 ## Best For
-- Software engineers
+- Software builders
 - Open source creators
 - Developer advocates
 - Technical founders
