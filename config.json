@@ -1,6 +1,6 @@
 {
   "name": "Dark Engineer",
-  "description": "Dark grid aesthetic with noise overlay, animated counters, and career timeline for engineers and open source creators",
+  "description": "Dark grid aesthetic with noise overlay, minimal personal page, tech stack, and contact links",
   "preview": "preview.png",
   "colors": {
     "primary": "#e5e5e5",
@@ -14,29 +14,18 @@
   },
   "sections": [
     "hero",
-    "profile",
-    "metrics",
-    "projects",
-    "career-timeline",
     "tech-stack",
     "contact"
   ],
   "customizable": {
-    "name": "Your Name",
-    "tagline": "Your role and location",
-    "profile": "Origin, Now, Belief, Impact, Mission entries",
-    "stats": "GitHub stars, downloads, or other metrics",
-    "projects": "Featured projects with descriptions and stats",
-    "experience": "Career timeline with roles and descriptions",
-    "tech_stack": "Languages, frameworks, and tools",
-    "links": ["GitHub", "Twitter", "LinkedIn", "Email"]
+    "name": "DmDh",
+    "tagline": "28°42'16.7\"N 115°51'53.8\"E",
+    "tech_stack": "Languages and tools"
   },
   "features": [
     "Noise overlay texture",
     "Grid background pattern",
-    "Animated stat counters",
     "Staggered hero letter animation",
-    "Career timeline with active indicator",
     "Glass-morphism pill tags",
     "Responsive dark theme"
   ]
