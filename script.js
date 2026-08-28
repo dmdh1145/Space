@@ -19,55 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==================== //
-    // Counter animation for stats
-    // ==================== //
-
-    const statObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCounter(entry.target);
-                statObserver.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
-
-    document.querySelectorAll('.stat-value').forEach(el => {
-        statObserver.observe(el);
-    });
-
-    function animateCounter(el) {
-        const target = parseInt(el.dataset.target, 10);
-        if (isNaN(target)) return;
-
-        const duration = 1500;
-        const start = performance.now();
-
-        function update(now) {
-            const elapsed = now - start;
-            const progress = Math.min(elapsed / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            const current = Math.floor(eased * target);
-
-            el.textContent = formatNumber(current);
-
-            if (progress < 1) {
-                requestAnimationFrame(update);
-            } else {
-                el.textContent = formatNumber(target);
-            }
-        }
-
-        requestAnimationFrame(update);
-    }
-
-    function formatNumber(n) {
-        if (n >= 1000) {
-            return (n / 1000).toFixed(1).replace(/\.0$/, '') + 'K';
-        }
-        return n.toLocaleString();
-    }
-
-    // ==================== //
     // Smooth scroll for nav links
     // ==================== //
 

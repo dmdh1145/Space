@@ -42,6 +42,10 @@ Or use Claude to customize conversationally!
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/debgotwired/clean-and-personal/tree/main/templates/62-dark-engineer)
 
+### Cloudflare Pages
+
+Push to GitHub and connect the repo in [Cloudflare Pages](https://pages.cloudflare.com/). Set build command to blank and publish directory to `/`. The repo contains no framework config files, so it will be served as static HTML.
+
 ## Inspired By
 
 [parthjadhav.com](https://www.parthjadhav.com/)

@@ -218,220 +218,6 @@ main {
 .card:hover {
     border-color: rgba(229, 229, 229, 0.15);
 }
-
-.card-label {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem;
-    color: var(--text-muted);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-}
-
-/* ==================== */
-/* Profile Section */
-/* ==================== */
-
-.profile-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-}
-
-.profile-entry {
-    display: flex;
-    align-items: baseline;
-    gap: 1rem;
-}
-
-.tag {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.65rem;
-    font-weight: 500;
-    color: var(--text-secondary);
-    background: var(--tag-bg);
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    white-space: nowrap;
-    min-width: 70px;
-    text-align: center;
-}
-
-.profile-entry p {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-
-/* ==================== */
-/* Stats */
-/* ==================== */
-
-.stats-row {
-    display: flex;
-    gap: 3rem;
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--border);
-}
-
-.stat-value {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--text);
-    letter-spacing: -0.02em;
-    font-variant-numeric: tabular-nums;
-}
-
-.stat-label {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.65rem;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-top: 0.25rem;
-}
-
-/* ==================== */
-/* Projects List */
-/* ==================== */
-
-.projects-list {
-    display: flex;
-    flex-direction: column;
-}
-
-.project-row {
-    display: flex;
-    align-items: center;
-    padding: 0.75rem 0;
-    border-bottom: 1px solid var(--border);
-    text-decoration: none;
-    color: var(--text);
-    transition: background 0.2s;
-    margin: 0 -2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.project-row:last-child {
-    border-bottom: none;
-}
-
-.project-row:hover {
-    background: var(--accent-dim);
-}
-
-.project-name {
-    font-weight: 500;
-    font-size: 0.875rem;
-    min-width: 160px;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-}
-
-.project-desc {
-    color: var(--text-muted);
-    font-size: 0.8rem;
-    flex: 1;
-}
-
-.project-stat {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem;
-    color: var(--text-secondary);
-    text-align: right;
-    min-width: 100px;
-}
-
-/* ==================== */
-/* Timeline */
-/* ==================== */
-
-.timeline {
-    position: relative;
-    padding-left: 2rem;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 5px;
-    top: 12px;
-    bottom: 12px;
-    width: 1px;
-    background: var(--border);
-}
-
-.timeline-entry {
-    position: relative;
-    margin-bottom: 2rem;
-}
-
-.timeline-entry:last-child {
-    margin-bottom: 0;
-}
-
-.timeline-dot {
-    position: absolute;
-    left: -2rem;
-    top: 8px;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background: var(--bg-card);
-    border: 2px solid var(--text-muted);
-    z-index: 1;
-}
-
-.timeline-entry.active .timeline-dot {
-    border-color: var(--green);
-    background: var(--green);
-    box-shadow: 0 0 8px rgba(34, 197, 94, 0.4);
-    animation: pulse 2s ease-in-out infinite;
-}
-
-.timeline-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 0.25rem;
-}
-
-.timeline-header h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--text);
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-}
-
-.timeline-date {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.65rem;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.timeline-role {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem;
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-.timeline-content p {
-    color: var(--text-muted);
-    font-size: 0.85rem;
-    line-height: 1.6;
-}
-
 /* ==================== */
 /* Tech Stack */
 /* ==================== */
@@ -569,11 +355,6 @@ footer {
     z-index: 1;
 }
 
-.footer-name {
-    font-weight: 500;
-    color: var(--text-secondary);
-}
-
 .footer-copy {
     text-align: center;
 }
@@ -622,14 +403,6 @@ footer {
         font-size: clamp(2.5rem, 10vw, 4rem);
     }
 
-    .stats-row {
-        gap: 2rem;
-    }
-
-    .stat-value {
-        font-size: 2rem;
-    }
-
     .stack-grid {
         grid-template-columns: 1fr;
     }
@@ -637,39 +410,6 @@ footer {
     .sites-list {
         justify-content: flex-start;
         gap: 0.65rem;
-    }
-
-    .project-row {
-        flex-wrap: wrap;
-        gap: 0.25rem;
-    }
-
-    .project-name {
-        min-width: auto;
-        width: 100%;
-    }
-
-    .project-desc {
-        width: 100%;
-    }
-
-    .project-stat {
-        min-width: auto;
-        text-align: left;
-    }
-
-    .profile-entry {
-        flex-direction: column;
-        gap: 0.25rem;
-    }
-
-    .tag {
-        align-self: flex-start;
-    }
-
-    .timeline-header {
-        flex-direction: column;
-        gap: 0.25rem;
     }
 
     .contact-links {
@@ -692,11 +432,6 @@ footer {
 
     .card {
         padding: 1.5rem;
-    }
-
-    .stats-row {
-        flex-direction: column;
-        gap: 1.5rem;
     }
 }
 
