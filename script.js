@@ -58,13 +58,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const cursorDot = document.querySelector('.cursor-dot');
 const cursorRing = document.querySelector('.cursor-ring');
-let mouseX = 0, mouseY = 0;
-let ringX = 0, ringY = 0;
-const LERP = 0.12;
+let mouseX = -100, mouseY = -100;
+let ringX = -100, ringY = -100;
+let isFirstMove = true;
+const LERP = 0.18;
 let dotScale = 1;
 let targetDotScale = 1;
 const DOT_HOVER = 1.5;
 const SCALE_LERP = 0.15;
+
+cursorDot.style.transform = 'translate3d(-100px, -100px, 0)';
+cursorRing.style.transform = 'translate3d(-100px, -100px, 0)';
 
 document.querySelectorAll('a, button').forEach(el => {
     el.addEventListener('mouseenter', () => { targetDotScale = DOT_HOVER; });
@@ -74,11 +78,21 @@ document.querySelectorAll('a, button').forEach(el => {
 document.addEventListener('mousemove', e => {
     mouseX = e.clientX;
     mouseY = e.clientY;
+    if (isFirstMove) {
+        ringX = mouseX;
+        ringY = mouseY;
+        isFirstMove = false;
+    }
     cursorDot.style.display = 'block';
     cursorRing.style.display = 'block';
 });
 
 document.addEventListener('mouseleave', () => {
+    isFirstMove = true;
+    mouseX = -100;
+    mouseY = -100;
+    ringX = -100;
+    ringY = -100;
     cursorDot.style.display = 'none';
     cursorRing.style.display = 'none';
     targetDotScale = 1;

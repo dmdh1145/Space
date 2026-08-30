@@ -367,6 +367,10 @@ body {
     cursor: none;
 }
 
+a, button {
+    cursor: none;
+}
+
 .cursor-dot,
 .cursor-ring {
     position: fixed;
