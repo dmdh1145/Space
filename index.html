@@ -17,12 +17,12 @@
     <meta property="twitter:title" content="DmDh's Space">
     <meta property="twitter:description" content="DmDh's personal space — projects, technology, experiments and digital creations.">
 
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" crossorigin>
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="assets/css/styles.css" as="style">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body translate="no">
     <div class="noise-overlay"></div>
@@ -33,6 +33,7 @@
     <nav>
         <div class="nav-logo">DmDh</div>
         <div class="nav-links">
+            <a href="#projects">Projects</a>
             <a href="#techstack">Tech Stack</a>
             <a href="#websites">Websites</a>
             <a href="#contact">Contact</a>
@@ -52,6 +53,28 @@
                 <span class="status-dot"></span>
                 DmDh - 28°42'16.7"N 115°51'53.8"E
             </p>
+        </section>
+
+        <div class="annotation" id="projects">{ PROJECTS }</div>
+        <section class="projects-grid" translate="no">
+            <a class="card project-card" href="dmdh-tools.html">
+                <div class="project-media">
+                    <img src="assets/img/dmdh-tools.jpg" alt="DmDh Tools" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">DmDh Tools</h3>
+                    <p class="project-desc">A collection of practical tools and experiments built for my digital workflow.</p>
+                    <span class="project-status">ACTIVE <span class="status-dot"></span></span>
+                </div>
+            </a>
+            <div class="card project-card">
+                <div class="project-media project-media-placeholder"></div>
+                <div class="project-body">
+                    <h3 class="project-title">Coming soon</h3>
+                    <p class="project-desc">More projects are on the way.</p>
+                    <span class="project-status upcoming">UPCOMING <span class="status-dot blue"></span></span>
+                </div>
+            </div>
         </section>
 
         <section id="techstack" class="tech-stack">
@@ -110,6 +133,6 @@
         <span class="footer-copy">&copy; 2026 DmDh ALL RIGHTS RESERVED. EVERLASTING ......</span>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

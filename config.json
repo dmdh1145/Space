@@ -1,32 +1,32 @@
 {
-  "name": "DmDh's Space",
-  "description": "DmDh's personal space — projects, technology, experiments and digital creations.",
-  "preview": "preview.png",
-  "colors": {
-    "primary": "#e5e5e5",
-    "secondary": "#a3a3a3",
-    "background": "#0a0a0a",
-    "text": "#e5e5e5"
+  pnamep: pDmDh's Spacep,
+  pdescriptionp: pDmDh's personal space — projects, technology, experiments and digital creations.p,
+  ppreviewp: ppreview.pngp,
+  pcolorsp: {
+    pprimaryp: p#e5e5e5p,
+    psecondaryp: p#a3a3a3p,
+    pbackgroundp: p#0a0a0ap,
+    ptextp: p#e5e5e5p
   },
-  "fonts": {
-    "primary": "Space Grotesk",
-    "secondary": "JetBrains Mono"
+  pfontsp: {
+    pprimaryp: pSpace Groteskp,
+    psecondaryp: pJetBrains Monop
   },
-  "sections": [
-    "hero",
-    "tech-stack",
-    "contact"
+  psectionsp: [
+    pherop,
+    ptech-stackp,
+    pcontactp
   ],
-  "customizable": {
-    "name": "DmDh",
-    "tagline": "28°42'16.7\"N 115°51'53.8\"E",
-    "tech_stack": "Languages and tools"
+  pcustomizablep: {
+    pnamep: pDmDhp,
+    ptaglinep: p28°42'16.7\pN 115°51'53.8\pEp,
+    ptech_stackp: pLanguages and toolsp
   },
-  "features": [
-    "Noise overlay texture",
-    "Grid background pattern",
-    "Staggered hero letter animation",
-    "Glass-morphism pill tags",
-    "Responsive dark theme"
+  pfeaturesp: [
+    pNoise overlay texturep,
+    pGrid background patternp,
+    pStaggered hero letter animationp,
+    pGlass-morphism pill tagsp,
+    pResponsive dark themep
   ]
 }
