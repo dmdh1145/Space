@@ -1,37 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" translate="no" class="notranslate">
+<html lang="en" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google" content="notranslate">
+    <script>document.documentElement.classList.add('js');</script>
     <title>DmDh's Space</title>
     <meta name="description" content="DmDh's personal space — projects, technology, experiments and digital creations.">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="canonical" href="https://dmdh.space/">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="preload" href="assets/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DmDh's Space">
+    <meta property="og:url" content="https://dmdh.space/">
     <meta property="og:title" content="DmDh's Space">
     <meta property="og:description" content="DmDh's personal space — projects, technology, experiments and digital creations.">
+    <meta property="og:image" content="https://dmdh.space/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="DmDh's Space">
 
     <!-- Social -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="DmDh's Space">
     <meta property="twitter:description" content="DmDh's personal space — projects, technology, experiments and digital creations.">
+    <meta property="twitter:image" content="https://dmdh.space/assets/img/og-image.jpg">
 
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" crossorigin>
     <link rel="preload" href="assets/css/styles.css" as="style">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body translate="no">
-    <div class="noise-overlay"></div>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="cursor-dot"></div>
-    <div class="cursor-ring"></div>
+    <div class="noise-overlay" aria-hidden="true"></div>
 
-    <nav>
-        <div class="nav-logo">DmDh</div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <nav aria-label="Main">
+        <a class="nav-logo" href="#top">DmDh</a>
         <div class="nav-links">
             <a href="#projects">Projects</a>
             <a href="#techstack">Tech Stack</a>
@@ -43,44 +58,52 @@
         </div>
     </nav>
 
-    <main>
+    <main id="main">
         <section class="hero">
-            <div class="annotation">[ PORTFOLIO // 2026 ]</div>
+            <p class="annotation">[ PORTFOLIO // 2026 ]</p>
             <h1 class="hero-name">
-                <span style="animation-delay: 0s">D</span><span style="animation-delay: 0.03s">m</span><span style="animation-delay: 0.06s">D</span><span style="animation-delay: 0.09s">h</span>
+                <span>D</span><span>m</span><span>D</span><span>h</span>
             </h1>
             <p class="hero-meta">
                 <span class="status-dot"></span>
-                DmDh - 28°42'16.7"N 115°51'53.8"E
+                DmDh - 28°42′N 115°52′E
             </p>
         </section>
 
-        <div class="annotation" id="projects">{ PROJECTS }</div>
-        <section class="projects-grid" translate="no">
-            <a class="card project-card" href="dmdh-tools.html">
-                <div class="project-media">
-                    <img src="assets/img/dmdh-tools.png" alt="DmDh Tools" loading="lazy">
-                </div>
-                <div class="project-body">
-                    <h3 class="project-title">DmDh Tools</h3>
-                    <p class="project-desc">A collection of practical tools and experiments built for my digital workflow.</p>
-                    <span class="project-status">ACTIVE <span class="status-dot"></span></span>
-                </div>
-            </a>
-            <a class="card project-card" href="aira.html">
-                <div class="project-media">
-                    <img src="assets/img/aira.png" alt="Aira" loading="lazy">
-                </div>
-                <div class="project-body">
-                    <h3 class="project-title">Aira</h3>
-                    <p class="project-desc">A native macOS AI chat client built with Swift and SwiftUI.</p>
-                    <span class="project-status">ACTIVE <span class="status-dot"></span></span>
-                </div>
-            </a>
+        <section id="projects">
+            <h2 class="annotation">{ PROJECTS }</h2>
+            <div class="projects-grid">
+                <a class="card project-card" href="dmdh-tools.html">
+                    <div class="project-media">
+                        <img src="assets/img/dmdh-tools-640.webp"
+                             srcset="assets/img/dmdh-tools-640.webp 640w, assets/img/dmdh-tools-1280.webp 1280w"
+                             sizes="(max-width: 640px) calc(100vw - 2.5rem), 410px"
+                             width="1280" height="720" alt="DmDh Tools" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">DmDh Tools</h3>
+                        <p class="project-desc">A collection of practical tools and experiments built for my digital workflow.</p>
+                        <span class="project-status">ACTIVE <span class="status-dot"></span></span>
+                    </div>
+                </a>
+                <a class="card project-card" href="aira.html">
+                    <div class="project-media">
+                        <img src="assets/img/aira-900.webp"
+                             srcset="assets/img/aira-450.webp 450w, assets/img/aira-900.webp 900w"
+                             sizes="(max-width: 640px) calc(100vw - 2.5rem), 410px"
+                             width="900" height="608" alt="Aira" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Aira</h3>
+                        <p class="project-desc">A native macOS AI chat client built with Swift and SwiftUI.</p>
+                        <span class="project-status">ACTIVE <span class="status-dot"></span></span>
+                    </div>
+                </a>
+            </div>
         </section>
 
         <section id="techstack" class="tech-stack">
-            <div class="annotation">{ TECH_STACK }</div>
+            <h2 class="annotation">{ TECH_STACK }</h2>
             <div class="stack-grid">
                 <div class="stack-card">
                     <h3>LANGUAGES</h3>
@@ -110,23 +133,27 @@
             </div>
         </section>
 
-        <div class="annotation" id="websites">{ WEBSITES }</div>
-        <section class="card sites-card">
-            <div class="sites-list">
-                <a href="https://dmdh.me" target="_blank" rel="noopener noreferrer">dmdh.me</a>
-                <a href="https://dmdh.space" target="_blank" rel="noopener noreferrer">dmdh.space</a>
-                <a href="https://dmdh.uno" target="_blank" rel="noopener noreferrer">dmdh.uno</a>
+        <section id="websites">
+            <h2 class="annotation">{ WEBSITES }</h2>
+            <div class="card sites-card">
+                <div class="sites-list">
+                    <a href="https://dmdh.me" target="_blank" rel="noopener noreferrer">dmdh.me</a>
+                    <a href="https://dmdh.space" target="_blank" rel="noopener noreferrer">dmdh.space</a>
+                    <a href="https://dmdh.uno" target="_blank" rel="noopener noreferrer">dmdh.uno</a>
+                </div>
             </div>
         </section>
 
-        <div class="annotation">{ CONTACT }</div>
-        <section id="contact" class="card">
-            <p class="contact-text">Always open to interesting conversations and collaborations.</p>
-            <div class="contact-links">
-                <a href="mailto:dev@dmdh.space">dev@dmdh.space</a>
-                <a href="https://dmdh.me" target="_blank" rel="noopener noreferrer">dmdh.me</a>
-                <a href="https://x.com/dmdh1145" target="_blank" rel="noopener noreferrer">X</a>
-                <a href="https://github.com/dmdh1145" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <section id="contact">
+            <h2 class="annotation">{ CONTACT }</h2>
+            <div class="card">
+                <p class="contact-text">Always open to interesting conversations and collaborations.</p>
+                <div class="contact-links">
+                    <a href="mailto:dev@dmdh.space">dev@dmdh.space</a>
+                    <a href="https://dmdh.me" target="_blank" rel="noopener noreferrer">dmdh.me</a>
+                    <a href="https://x.com/dmdh1145" target="_blank" rel="noopener noreferrer">X</a>
+                    <a href="https://github.com/dmdh1145" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
             </div>
         </section>
     </main>

@@ -1,37 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" translate="no" class="notranslate">
+<html lang="en" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google" content="notranslate">
+    <script>document.documentElement.classList.add('js');</script>
     <title>DmDh Tools — DmDh's Space</title>
     <meta name="description" content="DmDh Tools — a collection of small tools, experiments, and utilities built around a personal digital workflow.">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="canonical" href="https://dmdh.space/dmdh-tools.html">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="preload" href="assets/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DmDh's Space">
+    <meta property="og:url" content="https://dmdh.space/dmdh-tools.html">
     <meta property="og:title" content="DmDh Tools — DmDh's Space">
     <meta property="og:description" content="DmDh Tools — a collection of small tools, experiments, and utilities built around a personal digital workflow.">
+    <meta property="og:image" content="https://dmdh.space/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="DmDh Tools">
 
     <!-- Social -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="DmDh Tools — DmDh's Space">
     <meta property="twitter:description" content="DmDh Tools — a collection of small tools, experiments, and utilities built around a personal digital workflow.">
+    <meta property="twitter:image" content="https://dmdh.space/assets/img/og-image.jpg">
 
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" crossorigin>
     <link rel="preload" href="assets/css/styles.css" as="style">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body translate="no">
-    <div class="noise-overlay"></div>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="cursor-dot"></div>
-    <div class="cursor-ring"></div>
+    <div class="noise-overlay" aria-hidden="true"></div>
 
-    <nav>
-        <div class="nav-logo">DmDh</div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <nav aria-label="Main">
+        <a class="nav-logo" href="index.html">DmDh</a>
         <div class="nav-links">
             <a href="index.html#projects">Projects</a>
             <a href="index.html#techstack">Tech Stack</a>
@@ -43,16 +58,19 @@
         </div>
     </nav>
 
-    <main>
-        <section class="project-detail" translate="no">
+    <main id="main">
+        <section class="project-detail">
             <a class="detail-back" href="index.html">&larr; Back to Space</a>
-            <div class="annotation">[ PROJECT ]</div>
+            <p class="annotation">[ PROJECT ]</p>
             <div class="detail-head">
                 <h1 class="detail-title">DmDh Tools</h1>
                 <span class="project-status">ACTIVE <span class="status-dot"></span></span>
             </div>
             <div class="detail-media">
-                <img src="assets/img/dmdh-tools-detail.png" alt="DmDh Tools">
+                <img src="assets/img/dmdh-tools-detail-1280.webp"
+                     srcset="assets/img/dmdh-tools-detail-640.webp 640w, assets/img/dmdh-tools-detail-1280.webp 1280w"
+                     sizes="(max-width: 672px) calc(100vw - 2rem), 640px"
+                     width="1280" height="720" alt="DmDh Tools" decoding="async" fetchpriority="high">
             </div>
             <p class="detail-text">
                 A collection of small tools, experiments, and utilities built around my personal digital workflow.

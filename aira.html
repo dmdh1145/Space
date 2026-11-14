@@ -1,37 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" translate="no" class="notranslate">
+<html lang="en" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google" content="notranslate">
+    <script>document.documentElement.classList.add('js');</script>
     <title>Aira — DmDh's Space</title>
     <meta name="description" content="Aira — a lightweight, native macOS AI chat client built with Swift and SwiftUI for chatting with multiple AI models through customizable APIs.">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="canonical" href="https://dmdh.space/aira.html">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="preload" href="assets/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DmDh's Space">
+    <meta property="og:url" content="https://dmdh.space/aira.html">
     <meta property="og:title" content="Aira — DmDh's Space">
     <meta property="og:description" content="Aira — a lightweight, native macOS AI chat client built with Swift and SwiftUI for chatting with multiple AI models through customizable APIs.">
+    <meta property="og:image" content="https://dmdh.space/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Aira">
 
     <!-- Social -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Aira — DmDh's Space">
     <meta property="twitter:description" content="Aira — a lightweight, native macOS AI chat client built with Swift and SwiftUI for chatting with multiple AI models through customizable APIs.">
+    <meta property="twitter:image" content="https://dmdh.space/assets/img/og-image.jpg">
 
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" crossorigin>
     <link rel="preload" href="assets/css/styles.css" as="style">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body translate="no">
-    <div class="noise-overlay"></div>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="cursor-dot"></div>
-    <div class="cursor-ring"></div>
+    <div class="noise-overlay" aria-hidden="true"></div>
 
-    <nav>
-        <div class="nav-logo">DmDh</div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <nav aria-label="Main">
+        <a class="nav-logo" href="index.html">DmDh</a>
         <div class="nav-links">
             <a href="index.html#projects">Projects</a>
             <a href="index.html#techstack">Tech Stack</a>
@@ -43,16 +58,19 @@
         </div>
     </nav>
 
-    <main>
-        <section class="project-detail" translate="no">
+    <main id="main">
+        <section class="project-detail">
             <a class="detail-back" href="index.html">&larr; Back to Space</a>
-            <div class="annotation">[ PROJECT ]</div>
+            <p class="annotation">[ PROJECT ]</p>
             <div class="detail-head">
                 <h1 class="detail-title">Aira</h1>
                 <span class="project-status">ACTIVE <span class="status-dot"></span></span>
             </div>
             <div class="detail-media">
-                <img src="assets/img/aira.png" alt="Aira">
+                <img src="assets/img/aira-900.webp"
+                     srcset="assets/img/aira-450.webp 450w, assets/img/aira-900.webp 900w"
+                     sizes="(max-width: 672px) calc(100vw - 2rem), 640px"
+                     width="900" height="608" alt="Aira" decoding="async" fetchpriority="high">
             </div>
             <p class="detail-text">
                 A lightweight, native AI chat client for macOS, built with Swift and SwiftUI.

@@ -1,5 +1,11 @@
-# Local scratch / temp scripts
-_fix_css.ps1
-_fix_paths.ps1
-_tmp_patch.ps1
-_tmp_patch_css.ps1
+# OS / editor files
+.DS_Store
+Thumbs.db
+
+# Dependencies and local tooling
+node_modules/
+.wrangler/
+
+# Logs and local scratch scripts
+*.log
+_*.ps1
